@@ -1,0 +1,59 @@
+@use './../../../assets/theme/colors.scss' as c;
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background-color: c.$primary;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+h1, p{
+  position: fixed;
+  z-index: 10;
+}
+
+
+.cloud {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation: moveCloud 55s linear infinite;
+
+}
+
+@keyframes moveCloud {
+  from {
+    left: -0%;
+  }
+  to{
+    left: 100%;
+  }
+}
+
+.contenedor{
+  position: absolute;
+  width: 100%;
+}
+.x-1{
+  left: 65vh;
+  top: 62vh;
+  transform: scale(2.3);
+}
+.x-2{
+  left: 80vh;
+  top:75vh;
+  transform: scale(1.5);
+}
+.x-3{
+  left: -10vh;
+  top:70vh;
+  transform: scale(1.3)
+}
+.x-4{
+  left: -50vh;
+  top:60vh;
+  transform: scale(2.4)
+}

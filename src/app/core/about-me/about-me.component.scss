@@ -1,0 +1,65 @@
+@use './../../../assets/theme/colors.scss' as c;
+
+main{
+  background-color:c.$primary ;
+}
+section{
+  height: 100vh;
+}
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5vh;
+}
+.about{
+  flex-flow: column;
+  h2{
+    color: c.$title;
+  }
+  p{
+    color: c.$white;
+  }
+  .skills{
+    width: 100%;
+    .skills-tree{
+      display: grid;
+      grid-template-columns: repeat(4 , 1fr);
+      padding: 0.25rem;
+      gap: 0.5rem;
+      .skill-item{
+        border: 1px solid c.$secundary;
+        border-radius: 0.25rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        transition: opacity .25s,padding .25s;
+        opacity: .5;
+        flex-wrap: wrap;
+        .skill-name{
+          position: absolute;
+          bottom: -0.5rem;
+          opacity: 0;
+          transition: opacity .25s,bottom .25s;
+        }
+        &:hover{
+          color: c.$white;
+          opacity: 1;
+          padding-top: 0;
+          border: 1px solid c.$white;
+          .skill-name{
+              bottom: 0.28rem;
+              opacity: 1;
+          }
+          }
+       }
+    }
+    }
+    h3{
+      color: c.$title;
+      font-size: 1.3rem;
+    }
+ }
+

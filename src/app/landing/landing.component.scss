@@ -1,0 +1,71 @@
+@use './../../assets/theme/colors.scss' as c;
+@use './../../assets/theme/font.scss' as f;
+
+main{
+  display: flex;
+  height: 94.3vh;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 80vh;
+  height: 45vh;
+  margin-top: 10vh;
+  .title1{
+    font-size: 3rem;
+    color: c.$title;
+    font-family: f.$font-title;
+    margin-bottom: 0 ;
+  }
+  .title2{
+    font-size: 2.5rem;
+    color: c.$title;
+    font-family: f.$font-title;
+    margin: 0;
+  }
+  .title3{
+    color: c.$title;
+    font-size: 1.25rem;
+    font-family: f.$font-text;
+  }
+  .text{
+    margin-top: 1vh;
+    color: c.$white;
+    font-size: 1.25rem;
+    font-family: f.$font-text;
+  }
+  .icons{
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+
+    .icon{
+      color:c.$third;
+      transition: color 1s ease;
+     &:hover{
+      color:c.$white
+     }
+      }
+    }
+  }
+
+
+.containerButton{
+  display: flex;
+  flex-flow: row;
+  flex-direction: row-reverse;
+  button{
+    background-color: c.$third;
+    color:c.$white;
+    transition: background-color 1s ease;
+    &:hover{
+    background-color: c.$white;
+    color:c.$third
+    }
+  }
+  }
+
