@@ -1,8 +1,5 @@
 @use './../../../assets/theme/colors.scss' as c;
 
-main{
-  background-color:c.$primary ;
-}
 section{
   height: 100vh;
 }
@@ -13,12 +10,6 @@ img{
 }
 .about{
   flex-flow: column;
-  h2{
-    color: c.$title;
-  }
-  p{
-    color: c.$white;
-  }
   .skills{
     width: 100%;
     .skills-tree{

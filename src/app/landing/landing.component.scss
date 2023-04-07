@@ -28,9 +28,10 @@ main{
     margin: 0;
   }
   .title3{
-    color: c.$title;
     font-size: 1.25rem;
-    font-family: f.$font-text;
+  }
+  .highlight{
+    width: 60%;
   }
   .text{
     margin-top: 1vh;
@@ -62,6 +63,8 @@ main{
     background-color: c.$third;
     color:c.$white;
     transition: background-color 1s ease;
+    position: relative;
+    right: 50vh;
     &:hover{
     background-color: c.$white;
     color:c.$third

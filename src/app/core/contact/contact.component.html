@@ -1,27 +1,34 @@
-<main>
-  <section>
-    <form action=""><input type="text">
-      <input type="text" name="nombre">
-      <label for="nombre">Nombre</label>
 
-      <input type="text" name="asunto">
-      <label for="asunto">Asunto</label>
+  <section class="d-flex justify-content-center align-center col parallax" #contacto>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="topic">Topic:</label>
+              <input type="text" class="form-control" id="topic" placeholder="Enter the topic">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" rows="5" style="resize: none;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4">Submit</button>
+          </form>
+        </div>
+      </div>
+    <div class="col d-flex align-center justify-content-center">
+      <div class="canales">
+        <div><i class="fa-regular fa-envelope"></i><span>leonelperez.b23@gmail.com</span></div>
+        <div><i class="fa-solid fa-phone"></i><span>+54-351-770 92 01</span></div>
 
-      <input type="text" name="mensaje">
-      <label for="mensaje">Escribe tu mensaje</label>
-
-      <button  type="submit">Enviar</button>
-    </form>
-
-    <div class="redes">
-      <a href=""></a>
-      <a href=""></a>
+      </div>
     </div>
 
-    <div class="canales">
-      <span>leonelperez.b23@gmail.com</span>
-      <span>3517709201</span>
     </div>
 
   </section>
-</main>
+
